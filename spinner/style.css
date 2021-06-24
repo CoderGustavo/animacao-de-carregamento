@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#carregamento{
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    border-top: 5px solid #00a2ff;
+    animation: carregar 2s linear infinite;
+}
+
+@keyframes carregar {
+    to{
+        transform: rotate(360deg);
+    }
+}

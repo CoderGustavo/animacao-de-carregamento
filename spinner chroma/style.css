@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .loading{
+     width: 100px;
+     height: 100px;
+     border: 5px solid rgb(255, 0, 0);
+     border-top: 5px solid transparent;
+     animation: girar 2s linear infinite;
+     border-radius: 50%;
+ }
+
+ @keyframes girar {
+     20%{
+        transform: rotate(72deg);
+        border: 5px solid rgb(255, 251, 0);
+        border-top: 5px solid transparent;
+     }
+     40%{
+        transform: rotate(144deg);
+        border: 5px solid rgb(0, 255, 34);
+        border-top: 5px solid transparent;
+     }
+     60%{
+        transform: rotate(216deg);
+        border: 5px solid rgb(0, 225, 255);
+        border-top: 5px solid transparent;
+     }
+     80%{
+        transform: rotate(288deg);
+        border: 5px solid rgb(0, 4, 255);
+        border-top: 5px solid transparent;
+     }
+     100%{
+         transform: rotate(360deg);
+         border: 5px solid rgb(255, 0, 0);
+         border-top: 5px solid transparent;
+     }
+ }
